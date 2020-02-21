@@ -9,68 +9,68 @@
 </head>
 <body>
     <header class="header">
-        <h1>Happy Wheels</h1>
+        <section>
+            <h1>Happy Wheels</h1>
+        </section>
+        <section>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Выбор автомобиля</a></li>
+                    <li><a href="#">Станции аренды</a></li>
+                    <li><a href="#">Лизинг автомобилей</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Отзывы клиентов</a></li>
+                    <li><a href="#">Наши контакты</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <nav class="nav">
-        <ul>
-            <li>Выбор автомобиля</li>
-            <li>Станции аренды</li>
-            <li>Лизинг автомобилей</li>
-            <li>О компании</li>
-            <li>Отзывы клиентов</li>
-            <li>Наши контакты</li>
-        </ul>
-    </nav>
-    <div class="info1">
-        <h2>Мы предлагаем в аренду автомобили бюджетного комфорт и премиум класса по гарантированно низкой цене.</h2>
-        <div class = "advantages">
-            <img class="cars" src="lada.jpg">
-            <h3>Только новые автомобили!</h3>
-            Все машины, которые предлагает в аренду компания Storlet Car Rental — новые: не раньше 2015 года выпуска. Парк автомобилей постоянно обновляется, так как по специально разработанным стандартам машины нашей компании не должны эксплуатироваться более двух лет.
-        </div>
-        <div class = "advantages">
-            <img class="cars" src="hyundai.jpg">
-            <h3>Подача по городу!</h3>
-            Арендованный Вами автомобиль может быть подан в любую точку города, туда, где Вам будет удобно забрать его. Это может быть Ваш адрес, любая станция метро, вокзал или аэропорт. В аэропорт «Пулково» и на Московский вокзал автомобили подаются  бесплатно.
-        </div>
-        <div class = "advantages">
-            <img class="cars" src="new_hyundai.jpg">
-            <h3>Гарантия низких цен!</h3>
-             Мы — первая компания-дискаунтер на рынке аренды автомобилей. У нас Вы всегда найдете интересующий Вас автомобиль любого класса по лучшей цене в своем регионе. Клиентам гарантированы низкие цены на аренду автомобилей в сочетании с их высоким качеством.
-        </div>
-        <div class="buttonRent">
-            <a href="">Арендовать автомобиль</a>
-        </div>
-    </div>
-    <div class="info2">
-        Вы можете оставить своё сообщение в этой форме:
-        <p><textarea rows="5"
-            required
-            cols="35"
-            name="message"
-            placeholder="Введите текст"></textarea>
-        </textarea></p>
-        <p><textarea rows="1"
-            required
-            cols="20"
-            name="name"
-            placeholder="Ваше имя"></textarea></p>
-        <p><textarea rows="1"
-            required
-            cols="20"
-            name="phone number"
-            placeholder="Ваш телефон"></textarea></p>
-        <p><textarea rows="1"
-            required
-            cols="20"
-            name="email"
-            placeholder="Ваш email"></textarea></p>
-        <p><button class="buttonSubmit">Отправить</button></p> 
-    </div>
+    <main>
+        <section class="info1">
+            <h2>Мы предлагаем в аренду автомобили бюджетного комфорт и премиум класса по гарантированно низкой цене.</h2>
+            <ul>
+                <li>
+                    <img class="cars" src="lada.jpg" alt="lada">
+                    <h3>Только новые автомобили!</h3>
+                    Все машины, которые предлагает в аренду компания Storlet Car Rental — новые: не раньше 2015 года выпуска. Парк автомобилей постоянно обновляется, так как по специально разработанным стандартам машины нашей компании не должны эксплуатироваться более двух лет.
+                </li>
+                <li>
+                    <img class="cars" src="hyundai.jpg" alt="hyundai">
+                    <h3>Подача по городу!</h3>
+                    Арендованный Вами автомобиль может быть подан в любую точку города, туда, где Вам будет удобно забрать его. Это может быть Ваш адрес, любая станция метро, вокзал или аэропорт. В аэропорт «Пулково» и на Московский вокзал автомобили подаются  бесплатно.
+                </li>
+                <li>
+                    <img class="cars" src="new_hyundai.jpg" alt="new_hyundai">
+                    <h3>Гарантия низких цен!</h3>
+                     Мы — первая компания-дискаунтер на рынке аренды автомобилей. У нас Вы всегда найдете интересующий Вас автомобиль любого класса по лучшей цене в своем регионе. Клиентам гарантированы низкие цены на аренду автомобилей в сочетании с их высоким качеством.
+                </li>
+            </ul>
+            <div class="buttonRent">
+                <a href="#">Арендовать автомобиль</a>
+            </div>
+        </section>
+        <section class="info2">
+            <h4>Вы можете оставить своё сообщение в этой форме:</h4>
+            <form>
+                <textarea rows="5" class="form_mes"
+                    required
+                    cols="35"
+                    name="message"
+                    placeholder="Введите текст"></textarea>
+                <label for="id_name" class="mess">Ваше имя: <input id="id_name" class="mess" required type="text" name="name" placeholder="Владимир"></label>
+                <label for="id_phone" class="mess">Ваш телефон: <input id="id_phone" class="mess" required type="tel" name="phone" placeholder="8(911)816-78-99"></label>
+                <label for="id_email" class="mess">Ваша почта: <input id="id_email" class="mess" required type="email" name="email" placeholder="alexeev-1740@mail.ru"></label>
+            <br><button type="submit" class="buttonSubmit">Отправить</button></br>
+            </form>
+             
+        </section>
+    </main>
     <footer class="footer">
-        <a href="https://vk.com"><img src="vk.png" alt="VK"></a>
-        <a href="https://www.instagram.com"><img src="inst.png" alt="Instagram"></a>
-        <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+        <ul>
+            <a href="https://vk.com"><img src="vk.png" alt="VK"></a>
+            <a href="https://www.instagram.com"><img src="inst.png" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+        </ul>
     </footer>
 </body>
 </html>
