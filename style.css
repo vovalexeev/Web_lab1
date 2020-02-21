@@ -60,7 +60,6 @@ h3{
 }
 .buttonRent a{
     text-decoration: none;
-    padding: 14px 0;
     border: 2px solid #fff; 
     color: #fff;
     border-radius: 15px;
@@ -89,4 +88,7 @@ h3{
     width: 100%;
     text-align: right;
     bottom: 0;
+}
+.ul_contacts li{
+    display: inline;
 }
