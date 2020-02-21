@@ -13,9 +13,12 @@ h3{
     text-align: center;
 }
 .header{
-    border: 3px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
     background-color: rgb(16, 74, 160);
+}
+.nav a{
+    color: white;
 }
 .nav{
     border: 2px solid rgb(255, 255, 255);
@@ -23,32 +26,37 @@ h3{
     background-color: rgb(38, 33, 94);
     text-decoration: none;
     text-align: center;
-    color: white;
 }
-ul li{
+.header ul li{
     display: inline-block;
     margin-right: 2%;
-    cursor: pointer;
     margin-left: 2%;
 }
-.info1{
-    text-align: center;
+.form_mes{
+    display: block;
 }
-.advantages{
-    float: left;
+.mess{
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+}
+.info1 ul li{
+    display: inline-block;
+    justify-content: space-between;
     width: 31%;
     text-align: justify;
     margin-right: 1%;
     margin-left: 1%;
+}
+.info1{
+    text-align: center;
 }
 .cars{
     width: 100%;
     height: 100%;
 }
 .buttonRent{
-    text-align: center;
-    position: relative;
-    top: 40px;
+    padding-top: 15px;
 }
 .buttonRent a{
     text-decoration: none;
@@ -63,7 +71,7 @@ ul li{
 }
 .info2{
     margin-left: 1%;
-    margin-top: 65px;
+    margin-top: 45px;
 }
 .buttonSubmit{
     color: rgb(255, 255, 255);
