@@ -52,15 +52,15 @@
         <section class="info2">
             <h4>Вы можете оставить своё сообщение в этой форме:</h4>
             <form>
-                <textarea rows="5" class="form_mes"
+                <label class="form_mes" for="id_mes">Напишите комментарий: <textarea rows="5" class="form_mes"
                     required
                     cols="35"
                     name="message"
-                    placeholder="Введите текст"></textarea>
+                    placeholder="Введите текст"></textarea></label>
                 <label for="id_name" class="mess">Ваше имя: <input id="id_name" class="mess" required type="text" name="name" placeholder="Владимир"></label>
                 <label for="id_phone" class="mess">Ваш телефон: <input id="id_phone" class="mess" required type="tel" name="phone" placeholder="8(911)816-78-99"></label>
                 <label for="id_email" class="mess">Ваша почта: <input id="id_email" class="mess" required type="email" name="email" placeholder="alexeev-1740@mail.ru"></label>
-            <br><button type="submit" class="buttonSubmit">Отправить</button></br>
+            <button type="submit" class="buttonSubmit">Отправить</button>
             </form>     
         </section>
     </main>
